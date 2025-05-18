@@ -1,0 +1,15 @@
+[package]
+name = "promotion_kit"
+version = "0.1.0"
+edition = "2024"
+authors = ["Jerry Maheswara <jerrymaheswara@gmail.com>"]
+description = "A powerful Rust toolkit for dynamic promotion management and integration."
+license = "Apache-2.0"
+repository = "https://github.com/jerry-maheswara-github/promotion_kit"
+documentation = "https://docs.rs/promotion_kit"
+readme = "README.md"
+keywords = ["promotion", "integration", "callback"]
+categories = ["web-programming"]
+
+[dependencies]
+thiserror = "2.0.12"
