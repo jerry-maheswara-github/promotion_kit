@@ -67,3 +67,20 @@ pub fn apply_promotion(
     // If all validations pass, calculate and return discount
     Ok(calculate_discount(ctx.promo, ctx.transaction_amount))
 }
+
+/// Increments the usage count of a promotion by 1.
+///
+/// This function is used to track how many times a promotion has been used. 
+/// It ensures that the `used` field of the `Promotion` struct is incremented
+/// correctly each time a promotion is applied.
+pub fn increment_usage(promo: &mut Promotion) {
+    promo.used += 1;
+}
+
+/// Resets the usage count of a promotion to 0.
+///
+/// This function is useful when you need to reset the usage count for a promotion,
+/// either for testing purposes or when the promotion's usage limit is reset.
+pub fn reset_usage(promo: &mut Promotion) {
+    promo.used = 0;
+}

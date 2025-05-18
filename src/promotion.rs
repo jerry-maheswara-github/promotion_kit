@@ -49,4 +49,8 @@ pub struct Promotion {
 
     /// Category or scope where this promo is valid
     pub target: TargetScope,
+
+    /// The currency used for the promotion (e.g., "USD", "EUR")
+    /// This field could be optional or have a default currency.
+    pub currency: Option<String>,
 }
