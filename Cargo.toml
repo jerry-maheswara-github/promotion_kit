@@ -1,6 +1,6 @@
 [package]
 name = "promotion_kit"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["Jerry Maheswara <jerrymaheswara@gmail.com>"]
 description = "A powerful Rust toolkit for managing dynamic promotions with flexible rules and seamless integration."
